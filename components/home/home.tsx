@@ -111,10 +111,10 @@ export const Home = () => {
                     </div>
 
                     <div className="mt-12 flex gap-12" >
-                        <button className="pt-6 pb-6 pl-10 pr-10 rounded-2xl bg-purple-500 active:scale-95 transition-transform text-white hover:bg-transparent hover:text-purple-500 transition-colors border-2 border-transparent hover:border-purple-500">
+                        <button className="pt-6 pb-6 pl-10 pr-10 rounded-2xl bg-purple-500 active:scale-95 text-white hover:bg-transparent hover:text-purple-500 transition-colors border-2 border-transparent hover:border-purple-500">
                             View Project
                         </button>
-                        <button className="flex gap-2 pt-6 pb-6 pl-10 pr-10 rounded-2xl border-2 active:scale-95 transition-transform border-purple-500 text-purple-500 hover:text-white hover:bg-purple-500 hover:text-white transition-colors">
+                        <button className="flex gap-2 pt-6 pb-6 pl-10 pr-10 rounded-2xl border-2 active:scale-95 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transition-colors">
                             <FaCode size={24} className="mr-2" />
                             Github
                         </button>
