@@ -32,7 +32,7 @@ const ScrambledText: React.FC<ScrambledTextProps> = ({
         if (!rootRef.current) return;
 
         const split = SplitText.create(rootRef.current.querySelector('p'), {
-            type: 'chars',
+            type: 'words,chars',
             charsClass: 'inline-block will-change-transform'
         });
 
@@ -76,7 +76,7 @@ const ScrambledText: React.FC<ScrambledTextProps> = ({
     return (
         <div
             ref={rootRef}
-            className={`max-w-[100vw] font-mono text-[clamp(14px,4vw,32px)] text-white ${className}`}
+            className={`max-w-[100vw] font-mono text-white ${className}`}
             style={style}
         >
             {children}

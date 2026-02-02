@@ -49,7 +49,6 @@ export const Home = () => {
                             I craft robust and scalable digital products. With a passion for clean code and user-centric design, I turn complex problems into elegant solutions.
                         </p>
                     </div>
-
                     <div className="mt-12 w-full">
                         <hr className="w-full border-gray-800 opacity-50 mb-12" />
 
@@ -71,7 +70,6 @@ export const Home = () => {
                                     <span className="text-2xl font-bold text-purple-500 ml-1 mb-1">+</span>
                                 </div>
                             </div>
-
                             <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-gray-900/50 hover:bg-gray-900 transition-colors border border-gray-800">
                                 <div className="flex items-center gap-4 mb-2">
                                     <FaBug size={32} className="text-purple-500" />
@@ -89,7 +87,6 @@ export const Home = () => {
                                     <span className="text-2xl font-bold text-purple-500 ml-1 mb-1">+</span>
                                 </div>
                             </div>
-
                             <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-gray-900/50 hover:bg-gray-900 transition-colors border border-gray-800">
                                 <div className="flex items-center gap-4 mb-2">
                                     <VscDebugConsole size={32} className="text-purple-500" />
@@ -109,12 +106,11 @@ export const Home = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className="mt-12 flex gap-12" >
                         <button className="pt-6 pb-6 pl-10 pr-10 rounded-2xl bg-purple-500 active:scale-95 text-white hover:bg-transparent hover:text-purple-500 transition-colors border-2 border-transparent hover:border-purple-500">
                             View Project
                         </button>
-                        <button className="flex gap-2 pt-6 pb-6 pl-10 pr-10 rounded-2xl border-2 active:scale-95 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transition-colors">
+                        <button className="flex gap-2 pt-6 pb-6 pl-10 pr-10 rounded-2xl border-2 active:scale-95 border-purple-500 text-white hover:bg-purple-500 hover:text-white transition-colors">
                             <FaCode size={24} className="mr-2" />
                             Github
                         </button>
