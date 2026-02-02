@@ -7,7 +7,6 @@ import { VscVscode } from "react-icons/vsc";
 import { TiWaves } from "react-icons/ti";
 import { MdCleaningServices, MdOutlineManageHistory } from "react-icons/md";
 import { CiMonitor } from "react-icons/ci";
-import { FaGears } from "react-icons/fa6";
 import { BsTools } from "react-icons/bs";
 import { FaServer } from "react-icons/fa";
 import { RiOpenaiFill } from "react-icons/ri";
@@ -17,12 +16,12 @@ import { GiPadlock } from "react-icons/gi";
 export const Skills = () => {
     const [activeTab, setActiveTab] = useState<string>('frontend');
     return (
-        <section className="bg-gray-950 mt-36 flex flex-col items-center justify-center ">
+        <section id="skills" className="bg-gray-950 mt-24 flex flex-col items-center justify-center ">
             <span className=" py-1 px-3 rounded-full border-1 border-purple-500 text-purple-400 text-xs font-semibold tracking-wider uppercase mb-4">Technical Skills</span>
             <div className="mb-16 flex items-center justify-center">
                 <SplitText
                     text="Skills and"
-                    className="text-white mr-4 text-6xl font-bold text-center"
+                    className="text-white mr-2 md:mr-4 text-4xl md:text-6xl font-bold text-center"
                     delay={50}
                     duration={0.5}
                     ease="power3.out"
@@ -35,7 +34,7 @@ export const Skills = () => {
                 />
                 <SplitText
                     text="Technologies"
-                    className="text-purple-500 text-6xl font-bold text-center"
+                    className="text-purple-500 text-4xl md:text-6xl font-bold text-center"
                     delay={100}
                     duration={1}
                     ease="power3.out"
@@ -47,8 +46,8 @@ export const Skills = () => {
                     textAlign="center"
                 />
             </div>
-            <div className="p-2 pt-0 w-[100vh] h-[50vh] flex rounded-xl flex-col ">
-                <div className="flex items-center gap-2 p-2 justify-center rounded-xl">
+            <div className="p-2 pt-0 w-full max-w-5xl h-auto min-h-[50vh] flex rounded-xl flex-col ">
+                <div className="flex flex-wrap items-center justify-center gap-2 p-2 rounded-xl">
                     <button
                         onClick={() => setActiveTab('frontend')}
                         className={`text-white flex transition-all duration-100 bg-gray-800 pl-8 pr-8 pt-4 pb-4 rounded-sm hover:bg-gray-700 cursor-pointer border-purple-500 ${activeTab === 'frontend' ? 'border-b-0 shadow-sm bg-gray-900 hover:bg-gray-800' : 'border-b-6 shadow-md shadow-black'}`}>
@@ -62,11 +61,18 @@ export const Skills = () => {
                         className={`text-white flex transition-all duration-100 bg-gray-800 pl-8 pr-8 pt-4 pb-4 rounded-sm hover:bg-gray-700 cursor-pointer border-purple-500 ${activeTab === 'others' ? 'border-b-0 shadow-sm bg-gray-900 hover:bg-gray-800' : 'border-b-6 shadow-md shadow-black'}`}>
                         Others <BsTools size={24} className="ml-2" /></button>
                 </div>
-                <div className="grid grid-cols-3 mt-2 p-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-2 p-4 gap-6">
                     {/* frontend items */}
 
                     {activeTab === 'backend' && (
                         <>
+                            <div className="flex flex-col gap-4 text-white rounded-sm">
+                                <div className="flex items-center gap-2">
+                                    <SiNodedotjs size={38} className="text-purple-500" />
+                                    <h3 className="text-xl font-bold">Node.js</h3>
+                                </div>
+                                <p className="text-gray-400">A runtime environment for executing JavaScript code server-side.</p>
+                            </div>
                             <div className="flex flex-col gap-4 text-white rounded-sm">
                                 <div className="flex items-center gap-2">
                                     <SiNestjs size={38} className="text-purple-500" />

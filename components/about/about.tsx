@@ -7,14 +7,14 @@ import SplitText from "@/components/home/homeComponents/splitTitle";
 
 export const About = () => {
     return (
-        <section >
+        <section id="about">
             <div className="justify-around w-full flex items-center bg-gray-950">
-                <div className="flex flex-col items-center mt-36">
+                <div className="flex flex-col items-center mt-20 md:mt-30">
                     <span className=" py-1 px-3 rounded-full  border-purple-500 text-purple-400 text-xs font-semibold tracking-wider uppercase border mb-4">Introduction</span>
-                    <div className="flex items-center gap-6">
+                    <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6">
                         <SplitText
                             text="Overview,"
-                            className="text-white text-6xl font-bold"
+                            className="text-white text-4xl md:text-6xl font-bold"
                             delay={50}
                             duration={0.5}
                             ease="power3.out"
@@ -27,7 +27,7 @@ export const About = () => {
                         />
                         <SplitText
                             text="Who am I?"
-                            className="text-purple-500 text-6xl font-bold"
+                            className="text-purple-500 text-4xl md:text-6xl font-bold"
                             delay={120}
                             duration={2.5}
                             ease="power3.out"
@@ -41,7 +41,7 @@ export const About = () => {
                     </div >
                     <div className=" whitespace-pre-line flex items-center mt-12" >
                         <ScrambledText
-                            className=" w-[90vh] h-fit text-center"
+                            className=" w-full px-4 max-w-4xl h-fit text-center"
                             radius={100}
                             duration={1.2}
                             speed={0.1}
@@ -51,7 +51,7 @@ export const About = () => {
                             </p>
                         </ScrambledText>
                     </div>
-                    <div className="p-2 gap-6 mt-12 rounded-2xl w-6/12 grid grid-cols-2 justify-center items-center">
+                    <div className="p-2 gap-6 mt-12 rounded-2xl w-11/12 md:w-8/12 lg:w-6/12 grid grid-cols-1 md:grid-cols-2 justify-center items-center">
                         <div className="p-6 rounded-2xl h-full bg-gray-900/50 hover:bg-gray-900 transition-colors border border-gray-800">
                             <h1 className="text-purple-500 font-bold text-xl">
                                 Academic
@@ -76,5 +76,5 @@ export const About = () => {
 }
 
 //tempo de experiencia
-//o que eu to cursando 
+//o que eu to cursando
 //o que eu estou aprendendo
