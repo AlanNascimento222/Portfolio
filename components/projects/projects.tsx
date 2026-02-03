@@ -16,7 +16,7 @@ export const Projects = () => {
     const t = translations[language].projects
 
     return (
-        <section id="projects" className="bg-gray-950 mt-12 mb-26 flex flex-col items-center justify-center">
+        <section id="projects" className="bg-gray-950 mt-10  flex flex-col items-center h-full justify-center">
             <span className="py-1 px-3 rounded-full border border-purple-500 text-purple-400 text-xs font-semibold tracking-wider uppercase mb-4">
                 {t.badge}
             </span>
