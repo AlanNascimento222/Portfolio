@@ -86,7 +86,7 @@ export const Contact = () => {
                     <p className="text-gray-400 text-center text-sm">{t.emailDesc}</p>
                 </a>
             </div>
-            <footer className="w-full border-t-1 border-t-gray-800 text-white flex flex-col absolute bottom-0 left-0 right-0 items-center justify-center p-4">
+            <footer className="w-full border-t border-t-gray-800 mt-12 text-white flex flex-col items-center justify-center p-4">
                 <p className="text-gray-400 text-center text-sm">{t.footerRights}</p>
                 <p className="text-gray-400 text-center text-sm">{t.feedback} <a href="mailto:alanascimento222@hotmail.com">alanascimento222@hotmail.com</a></p>
             </footer>
